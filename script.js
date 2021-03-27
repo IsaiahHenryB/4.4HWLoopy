@@ -45,14 +45,12 @@ const caseSwitch = (str) =>{
     let l=0
     for(let index of str){
         if(str[i]===str[i].toUpperCase()){
-            str[i].toLowerCase();
             if(u===str.length-1){
                 return `Upper`
             }
             u++
         }
-        if(str[i]===str[i].toLowerCase()){
-            str[i].toUpperCase();
+        else if(str[i]===str[i].toLowerCase()){
             if(l===str.length-1){
                 return `Lower`
             }
@@ -65,6 +63,7 @@ const caseSwitch = (str) =>{
 console.log(caseSwitch("Norman"))
 console.log(caseSwitch("norman"))
 console.log(caseSwitch("NORMAN"))
+// I know there must be something easier but nothing came to mind :(
 // 6
 const guess = (num) =>{
     
